@@ -1,5 +1,21 @@
 <?php
 $arUrlRewrite=array (
+  2 => 
+  array (
+    'CONDITION' => '#^/kvartiry/([a-z0-9\\-]+)/?(?:\\?.*)?$#',
+    'RULE' => 'code=$1',
+    'ID' => '',
+    'PATH' => '/kvartiry/detail.php',
+    'SORT' => 90,
+  ),
+  3 => 
+  array (
+    'CONDITION' => '#^/novosti/([a-z0-9\\-]+)/?(?:\\?.*)?$#',
+    'RULE' => 'code=$1',
+    'ID' => '',
+    'PATH' => '/novosti/detail.php',
+    'SORT' => 90,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/rest/#',
