@@ -37,12 +37,10 @@ $sfPhone = '8 (800) 100-26-14';
             <a class="sf-footer__phone" href="tel:+78001002614"><?= sf_e($sfPhone) ?></a>
             <p>Санкт-Петербург,<br>Невский проспект, 48</p>
             <p>Ежедневно с 10:00 до 20:00</p>
-            <button class="sf-btn sf-btn--red" type="button" data-callback>Заказать звонок</button>
         </div>
     </div>
     <div class="sf-wrap sf-footer__legal">
         <span>© <?= date('Y') ?> Space Fox. Демонстрационный сайт, предложения не являются офертой.</span>
-        <a href="/about/#kontakty">Офис продаж</a>
     </div>
 </footer>
 

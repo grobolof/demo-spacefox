@@ -14,9 +14,6 @@ $sfPhoneHref = 'tel:+78001002614';
 $sfNav = [
     ['label' => 'О нас', 'href' => '/about/'],
     ['label' => 'Новости', 'href' => '/novosti/'],
-    ['label' => 'Акции', 'href' => '/novosti/?tag=Скидки', 'hot' => true],
-    ['label' => 'Ипотека', 'href' => '/about/#ipoteka'],
-    ['label' => 'Как купить', 'href' => '/about/#kak-kupit'],
     ['label' => 'Контакты', 'href' => '/about/#kontakty'],
 ];
 ?>
@@ -42,17 +39,6 @@ $sfNav = [
             <span class="sf-logo__mark">F</span>
             <span class="sf-logo__word">Space Fox</span>
         </a>
-
-        <div class="sf-city">
-            <button class="sf-city__btn" type="button" aria-expanded="false" data-dropdown="city">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a7 7 0 0 0-7 7c0 5.1 7 12 7 12s7-6.9 7-12a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-                Санкт-Петербург
-            </button>
-            <div class="sf-drop" data-menu="city">
-                <span class="sf-drop__current">Санкт-Петербург</span>
-                <span class="sf-drop__muted">Другие города появятся позже</span>
-            </div>
-        </div>
 
         <div class="sf-objects">
             <button class="sf-objects__btn" type="button" aria-expanded="false" data-dropdown="objects">
@@ -80,18 +66,10 @@ $sfNav = [
                     <a class="<?= !empty($item['hot']) ? 'is-hot' : '' ?><?= $isCurrent ? ' is-current' : '' ?>" href="<?= sf_e($item['href']) ?>"><?= sf_e($item['label']) ?></a>
                 <?php endforeach; ?>
             </div>
-            <div class="sf-nav__row sf-nav__row--sub">
-                <a href="/about/#dolshchikam">Дольщикам</a>
-                <a class="is-hot" href="/about/#bonus">Fox Бонус</a>
-            </div>
         </nav>
 
         <a class="sf-phone" href="<?= sf_e($sfPhoneHref) ?>"><?= sf_e($sfPhone) ?></a>
         <button class="sf-btn sf-btn--red sf-header__call" type="button" data-callback>Заказать звонок</button>
-        <button class="sf-iconbtn" type="button" data-favorites-link aria-label="Избранное">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg>
-            <span class="sf-iconbtn__count" data-fav-count hidden>0</span>
-        </button>
         <button class="sf-burger" type="button" aria-label="Меню" aria-expanded="false" data-burger>
             <span></span><span></span><span></span>
         </button>
